@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jinhui.rxfingerdemo.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <com.example.jinhui.rxfingerdemo.FingerView
+            android:id="@+id/fingerView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="开启"/>
+</RelativeLayout>
